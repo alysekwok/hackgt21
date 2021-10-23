@@ -1,0 +1,27 @@
+{
+  "name": "hackgt21",
+  "version": "1.0.0",
+  "description": "hackgt 2021 dormeats",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alysekwok/hackgt21.git"
+  },
+  "author": "ThirstyDragonfly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alysekwok/hackgt21/issues"
+  },
+  "homepage": "https://github.com/alysekwok/hackgt21#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
