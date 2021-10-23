@@ -1,16 +1,18 @@
 import './App.css';
 import Customers from './components/customers/customers'
 import Home from './components/customers/Home'
+import NavBar from './components/customers/NavBar'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-    
-          <Home/>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route path='/' exact component={Home} />
         
-        <Customers />
-      </header>
-    </div>
+      </Switch>
+
+    </Router>
   );
 }
 

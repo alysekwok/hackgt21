@@ -22,7 +22,8 @@
   "homepage": "https://github.com/alysekwok/hackgt21#readme",
   "dependencies": {
     "concurrently": "^6.3.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"
