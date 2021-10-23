@@ -1,28 +1,28 @@
 const express = require('express');
+const cors = require('cors');
+const mongoose = require('mongoose');
+require('dotenv').config();
 
 const app = express();
 
-app.get('/api/customers', (req, res) => {
-    const customers = [
-        {id : 1, firstName: 'John', lastName: 'Doe'},
-        {id : 2, firstName: 'Ishaan', lastName: 'Guha'},
-        {id : 3, firstName: 'John', lastName: 'Doe'},
-    ];
-    res.json(customers);
-});
+const port = process.env.port || 5000;
 
-const kitchen = require('./models/kitchenRouter')
-app.use('/api', kitchen)
-app.get('/api/food', (req, res) => {
-    const customers = [
-        {id : 1, firstName: 'John', lastName: 'Doe'},
-        {id : 2, firstName: 'Ishaan', lastName: 'Guha'},
-        {id : 3, firstName: 'John', lastName: 'Doe'},
-    ];
-    res.json(customers);
-});
+app.use(cors());
+app.use(express.json())
 
+const uri = process.env.ATLAS_URI;
+mongoose.connect(uri, { useNewUrlParser: true});
+const connection = mongoose.connection;
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully");
+})
 
-const port = 5000;
+//const user = require('./models/userRouter')
+//const order = require('./models/orderRouter')
+const users = require('./routes/users.js');
+app.use('/api', users);
+//app.use('/api', user)
+//app.use('/api', order)
+
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
