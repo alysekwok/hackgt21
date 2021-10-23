@@ -1,12 +1,13 @@
 
 #navigationBar {
-    background-color: #dddddd;
+    background-color: white;
     
 }
 
 #rightBar li {
     float: right;
     padding-top: 50px;
+    padding-right: 20px;
 }
 
 ul {
