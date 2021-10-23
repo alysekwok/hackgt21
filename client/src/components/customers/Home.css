@@ -3,16 +3,33 @@ body {
 }
 
   @import url('https://fonts.googleapis.com/css?family=Poppins:700');
-
-h1 {
-  color: black;
-  font-size: 8vmin;
-  line-height: 1;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: 'Poppins', sans-serif;
-  padding-left: 40px;
+#tagline-container {
+    padding: 70px;
+    padding-top: 50px;
 }
+.tagline {
+  color: white;
+  font-size: 7vmin;
+  line-height: 0.5;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+h2 {
+    color: white;
+    font-size: 5vmin;
+    line-height: 0.5;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding:120px;
+    
+}
+.start-class {
+    margin-left: 110px;
+    margin-top: 80px;
+}
+
 
 .blob {
   position: absolute;
@@ -23,6 +40,22 @@ h1 {
   z-index: -1;
   animation: move 10s ease-in-out infinite;
   transform-origin: 50% 50%;
+}
+
+#create-account-button {
+    background-color: white;
+    border: none;
+    color: rgba(131,197,190,1);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 200px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
 }
 
 @keyframes move {
