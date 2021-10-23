@@ -1,4 +1,9 @@
-app.get('/api/kitchen', (req, res) => {
+const express = require('express');
+const router = express.Router();
+
+
+
+router.get('/kitchen', (req, res) => {
     const customers = [
         {id : 1, firstName: 'John', lastName: 'Doe'},
         {id : 2, firstName: 'Ishaan', lastName: 'Guha'},
@@ -6,3 +11,5 @@ app.get('/api/kitchen', (req, res) => {
     ];
     res.json(customers);
 });
+
+module.exports = router;
