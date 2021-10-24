@@ -5,30 +5,26 @@ const order = require('./order.model').schema;
 const userSchema = new Schema({
   username: {
     type: String,
-    required: true,
-    unique: true,
-    trim: true,
-    minlength: 3
+    required: true
   },
   password: {
     type: String,
-    required: true,
-    unique: true,
-    trim: true,
-    minlength: 3
+    required: true
   },
   location: {
     type: [Number],
     required: true
   },
+  //profile pic
+  thumbnail : {
+    type : String,
+  },
   communityItems: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'FoodItem' }]
+      type: Array
   },
   orders: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'Order' }]
+      type: Array
   }
-}, {
-  timestamps: true,
 });
 
 const User = mongoose.model('User', userSchema);
