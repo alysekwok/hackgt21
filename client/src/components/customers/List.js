@@ -1,5 +1,6 @@
 import React from "react";
 import './css/List.css';
+import soosh from './assets/soosh.jpeg';
 
 const List = () => {
     return (
@@ -41,7 +42,8 @@ const List = () => {
         <div id="gf-button">
             <button>GLUTEN-FREE</button>
         </div>
-    
+        <img src={soosh}></img>
+
         </div>
     )
 }
