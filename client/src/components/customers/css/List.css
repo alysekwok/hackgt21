@@ -39,7 +39,6 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;    
-    
     color: #000000;
 }
 .img-rect {
@@ -65,7 +64,6 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;    
-    
     color: #000000;
 }
 .name-rect {
@@ -74,16 +72,6 @@
     height: 36px;
     left: 750px;
     top: 330px;
-    
-    background: #F3F3F3;
-    border-radius: 15px;
-}
-.ing-rect {
-    position: absolute;
-    width: 421px;
-    height: 63px;
-    left: 750px;
-    top: 420px;
     
     background: #F3F3F3;
     border-radius: 15px;
@@ -99,16 +87,15 @@
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 20px;    
-    
+    line-height: 20px;      
     color: #000000;
 }
-.desc-rect {
+.ing-rect {
     position: absolute;
     width: 421px;
-    height: 78px;
+    height: 63px;
     left: 750px;
-    top: 535px;
+    top: 420px;
     
     background: #F3F3F3;
     border-radius: 15px;
@@ -125,12 +112,35 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;    
-    
     color: #000000;
 }
-
-
-
+.desc-rect {
+    position: absolute;
+    width: 421px;
+    height: 78px;
+    left: 750px;
+    top: 535px;
+    
+    background: #F3F3F3;
+    border-radius: 15px;
+}
+.diet-header {
+    white-space: nowrap;
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: 650px;
+    top: 650px;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;    
+    color: #000000;
+}
+#veg-button {
+    
+}
 
 #add-button {
     position: absolute;
@@ -138,11 +148,4 @@
     height: 41px;
     left: 641px;
     top: 730px;
-
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-    padding-left: 30px; */
-    
 }
