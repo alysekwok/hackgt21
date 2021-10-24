@@ -1,1 +1,0 @@
-// make page dynammic

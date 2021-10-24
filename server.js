@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
-
+const passport = require("passport")
 const app = express();
 
 const port = process.env.port || 5000;
@@ -16,11 +16,13 @@ const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 })
-
+app.use(passport.initialize());
+require("./config/passport")(passport);
 //const user = require('./models/userRouter')
 //const order = require('./models/orderRouter')
 const users = require('./routes/users.js');
-app.use('/api', users);
+app.use('/api/user', users);
+
 //app.use('/api', user)
 //app.use('/api', order)
 
