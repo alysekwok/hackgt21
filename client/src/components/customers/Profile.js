@@ -19,7 +19,7 @@ class Profile extends Component {
             <div class ="camera-icon"></div>
             <div class ="user-customer-rectangle"></div>
             <div class ="profile-box">
-                <img src ={ ProfilePic }></img>
+                <img class ="profile-image" src ={ ProfilePic }></img>
                 <h3>Welcome {user.username}!</h3>
                 <p>Name</p>
                 <p>Email</p>
