@@ -8,7 +8,9 @@ const List = () => {
         <h1 class = "list-header">LIST A DISH</h1> 
         <div class="rect"></div>
         
-        <div class="img-rect"></div>
+        <div class="img-rect">
+            <img src={soosh} id="s"></img>
+        </div>
         <div>
             <h2 class="img-header">TAKE A PICTURE</h2>
         </div>
@@ -42,7 +44,6 @@ const List = () => {
         <div id="gf-button">
             <button>GLUTEN-FREE</button>
         </div>
-        <img src={soosh}></img>
 
         </div>
     )
