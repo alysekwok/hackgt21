@@ -1,9 +1,11 @@
+
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
+import Login from "./Login.js"
 
 class Register extends Component {
   constructor() {
@@ -53,7 +55,8 @@ return (
                 <b>Register</b> below
               </h4>
               <p className="grey-text text-darken-1">
-                Already have an account? <Link to="/login">Log in</Link>
+                Already have an account? 
+                <Link to="/login">Login</Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>

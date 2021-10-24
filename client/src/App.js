@@ -40,8 +40,8 @@ function App() {
     <Router>
       <NavBar />
         <Route exact path='/' component={Home} />
-        <Route exact path='/register' component={Register} />
-        <Route exact path="/login" Component= {Login} />
+        <Route path='/register' component={Register} />
+        <Route path='/login' component={Login} />
         <Route path='/order' component= {Order} />
         <Route path='/pantry' component= {Pantry} />
         <Switch>

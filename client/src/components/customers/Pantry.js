@@ -9,6 +9,14 @@ const Pantry = () => {
             <div id = "add-button">
             <button>Add a pantry item</button>
             </div>
+            <div class = "grid">
+            <div class = "foodEntry"> </div>
+            <div class = "foodEntry"> </div>
+            <div class = "foodEntry"> </div>
+            <div class = "foodEntry"> </div>
+            <div class = "foodEntry"> </div>
+            <div class = "foodEntry"> </div>
+            </div>
         </div>
         
 
