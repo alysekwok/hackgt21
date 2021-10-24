@@ -15,6 +15,8 @@ import Pantry from './components/customers/Pantry'
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Profile from './components/customers/Profile'
+import List from './components/customers/List'
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -34,6 +36,7 @@ if (localStorage.jwtToken) {
   }
 }
 
+
 function App() {
   return (
     <Provider store ={store}>
@@ -46,7 +49,10 @@ function App() {
         <Route path='/pantry' component= {Pantry} />
         <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path='/profile' component= {Profile} />
             </Switch>
+        
+        <Route path='/list' component= {List} />
     </Router>
     </Provider>
   );

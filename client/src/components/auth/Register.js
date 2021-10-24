@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
 import Login from "./Login.js"
+import './auth.css';
 
 class Register extends Component {
   constructor() {
@@ -17,6 +18,13 @@ class Register extends Component {
       location: [15, 20],
       errors: {}
     };
+  }
+
+  componentDidMount() {
+    // If logged in and user navigates to Register page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/profile");
+    }
   }
 
   componentWillReceiveProps(nextProps) {

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+h3 {
+    color: black;
+    font-size: 20px;
+    line-height: 0.5;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+body {
+    font-size: 14px;
+}
+
+.profile-page {
+    background-color: rgba(248,248,248,1);
+    height: 700px;
+    width: auto;
+    padding-top: 70px;
+}
+
+.profile-rectangle {
+    width: 73%;
+    height: 90%;
+    background: rgba(238,238,238,1);
+    opacity: 1;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+}
+
+.camera-icon {
+    width: 476px;
+    height: 229px;
+    /* background: url("../images/v9_38.png"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 165px;
+    left: 867px;
+    overflow: hidden;
+}
+
+.profile-box {
+    width: 476px;
+    height: 600px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.cook-user-box {
+    width: 440px;
+    height: 229px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    left: 64%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.blurb-box {
+    width: 440px;
+    height: 330px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 65%;
+    left: 64%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}

@@ -41,7 +41,7 @@ li a {
   }
 
 button {
-    background-color: aliceblue;
+    background-color: rgba(131,197,190,1);
     border: none;
     color: black;
     padding: 10px 30px;
