@@ -1,7 +1,13 @@
 
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { registerUser } from "../../actions/authActions";
+import classnames from "classnames";
+import Login from "./Login.js"
 import './auth.css';
+
 class Register extends Component {
   constructor() {
     super();
@@ -13,6 +19,22 @@ class Register extends Component {
       errors: {}
     };
   }
+
+  componentDidMount() {
+    // If logged in and user navigates to Register page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/profile");
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
+    }
+  }
+
 onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
   };
@@ -24,8 +46,8 @@ const newUser = {
       location: this.state.location,
       password2: this.state.password2
     };
-console.log(newUser);
-  };
+    this.props.registerUser(newUser, this.props.history); 
+};
 render() {
     const { errors } = this.state;
 return (
@@ -54,8 +76,12 @@ return (
                   error={errors.username}
                   id="username"
                   type="text"
+                  className={classnames("", {
+                    invalid: errors.username
+                  })}
                 />
                 <label htmlFor="username">Username</label>
+                <span className="red-text">{errors.username}</span>
               </div>
               <div className="input-field col s12">
                 <input
@@ -64,8 +90,12 @@ return (
                   error={errors.password}
                   id="password"
                   type="password"
+                  className={classnames("", {
+                    invalid: errors.password
+                  })}
                 />
                 <label htmlFor="password">Password</label>
+                <span className="red-text">{errors.password}</span>
               </div>
               <div className="input-field col s12">
                 <input
@@ -74,8 +104,12 @@ return (
                   error={errors.password2}
                   id="password2"
                   type="password"
+                  className={classnames("", {
+                    invalid: errors.password2
+                  })}
                 />
                 <label htmlFor="password2">Confirm Password</label>
+                <span className="red-text">{errors.password2}</span>
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <button
@@ -98,4 +132,19 @@ return (
     );
   }
 }
-export default Register;
+
+Register.propTypes = {
+    registerUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+  };
+
+const mapStateToProps = state => ({
+    auth: state.auth,
+    errors: state.errors
+  });
+
+export default connect(
+    mapStateToProps,
+    { registerUser }
+  )(withRouter(Register));
