@@ -17,6 +17,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Profile from './components/customers/Profile'
 import List from './components/customers/List'
+import Messages from './components/customers/Messages'
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
   // Set auth token header auth
@@ -53,6 +54,7 @@ function App() {
             </Switch>
         
         <Route path='/list' component= {List} />
+        <Route path='/messages' component= {Messages} />
     </Router>
     </Provider>
   );
