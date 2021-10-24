@@ -2,11 +2,18 @@
 
 h3 {
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 0.5;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     position: relative;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+p {
+    padding-left: 40px;
+    padding-bottom: 10px;
 }
 
 body {
@@ -15,7 +22,7 @@ body {
 
 .profile-page {
     background-color: rgba(248,248,248,1);
-    height: 700px;
+    height: 900px;
     width: auto;
     padding-top: 70px;
 }
@@ -83,6 +90,93 @@ body {
     position: absolute;
     top: 65%;
     left: 64%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.profile-circle {
+    position: absolute;
+    width: 225px;
+    height: 222.04px;
+    left: 441px;
+    top: 222px;
+
+    background: #F3F3F3;
+}
+
+.buttonCook {
+    background-color: rgba(196, 196, 196, 1);
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 200px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 90px;
+    margin-right: 25px;
+}
+
+.buttonUser {
+    background-color: rgba(196, 196, 196, 1);
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 200px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttonSave {
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    margin-left: 190px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 200px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    padding-top: 20px;
+    margin-left: 120px;
+    align-self: center;
+}
+
+.hi {
+    padding-left: 50px;
+    padding-top: 50px;
+    left: 60px;
+}
+
+.inputblob {
+    width: 370px;
+    height: 200px;
+    background: rgb(238, 238, 238);
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    left: 8%;
     border-radius: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
