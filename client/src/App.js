@@ -6,6 +6,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Order from './components/customers/Order'
 import Pantry from './components/customers/Pantry'
+import List from './components/customers/List'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/order' component= {Order} />
         <Route path='/pantry' component= {Pantry} />
-
+        <Route path='/list' component= {List} />
     </Router>
   );
 }
