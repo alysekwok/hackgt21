@@ -1,16 +1,17 @@
 import React from 'react';
-import {  Link } from "react-router-dom";
-import './NavBar.css';
+import { Link} from "react-router-dom";
+import './css/NavBar.css';
+
 const NavBar= () =>{
     return (
     <div id = "navigationBar">
         <ul>
         <div id = "rightBar">
-        <li>
-      <button id = "request-button">REQUEST</button>
+        <li id = "orderbtn">
+            <Link to="/order">ORDER</Link>
       </li>
       <li>
-      <button id = "list-button">LIST</button>
+      <Link to="/list">LIST</Link>
       </li>
       <li>
         <Link to="/profile">PROFILE</Link>

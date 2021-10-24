@@ -1,11 +1,11 @@
 import React from "react";
-import './Home.css';
+import './css/Home.css';
 import PinkBlob from './assets/blob1.svg'
 
 const Home = () => {
     return (
         <div class = "home-page" >
-            <div id = "logo"></div>
+            <div id = "container">
 
            <div class = "blob">
              <img src = {PinkBlob} alt="Pink Blob"/>
@@ -19,7 +19,9 @@ const Home = () => {
            <div class = "start-class">
            <button id = "create-account-button">View meals</button>
            </div>
+         </div>
         </div>
+        
     )
 }
 export default Home;
