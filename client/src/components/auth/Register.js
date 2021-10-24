@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Login from "./Login.js"
+import './auth.css';
 class Register extends Component {
   constructor() {
     super();

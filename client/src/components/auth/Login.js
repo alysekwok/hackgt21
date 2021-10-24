@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import './auth.css';
 class Login extends Component {
   constructor() {
     super();
@@ -47,7 +48,7 @@ return (
                   id="username"
                   type="text"
                 />
-                <label htmlFor="username">AAAAAaaa</label>
+                <label htmlFor="username">Username</label>
               </div>
               <div className="input-field col s12">
                 <input
