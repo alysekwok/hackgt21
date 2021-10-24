@@ -22,10 +22,10 @@ const orderSchema = new Schema({
     type: String,
   },
   user: {
-      type: { type: Schema.Types.ObjectId, ref: 'User' }
+      type: Array
   },
   item: {
-      type: { type: Schema.Types.ObjectId, ref: 'FoodItem' }
+      type: Array
   },
   completed: {
       type: Boolean,

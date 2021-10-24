@@ -25,7 +25,7 @@ const foodItemSchema = new Schema({
       default: false
   },
   kitchen: {
-      type: { type: Schema.Types.ObjectId, ref: 'Kitchen' }
+      type: Array
   },
   price: {
       type: Number

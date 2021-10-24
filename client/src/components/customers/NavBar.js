@@ -14,7 +14,7 @@ const NavBar= () =>{
       <Link to="/list">LIST</Link>
       </li>
       <li>
-        <Link to="/profile">PROFILE</Link>
+        <Link to="/register">PROFILE</Link>
       </li>
       <li>
         <Link to="/messages">MESSAGES</Link>

@@ -7,16 +7,16 @@ const order = require('./order.model').schema;
 
 const kitchenSchema = new Schema({
   user: {
-    type: { type: Schema.Types.ObjectId, ref: 'User' }
+    type: Array
   },
   location: {
     type: [Number]
   },
   dishes: {
-    type: [{ type: Schema.Types.ObjectId, ref: 'FoodItem' }]
+    type: Array
   },
   currOrders: {
-      type: [{ type: Schema.Types.ObjectId, ref: 'Order' }]
+      type: Array
   }
 }, {
   timestamps: true,
