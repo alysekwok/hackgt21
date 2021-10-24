@@ -1,9 +1,11 @@
 
 .pantry-page {
-    background-color: white;
-    height: 700px;
+    background-color:#F3F3F3;
+    height: 1000px;
     width: auto;
     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 #big-pantry-text {
@@ -17,12 +19,13 @@
     text-align: center;
 }
 
-#add-button {
+#pantry-add-btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    padding-left: 80px;
+    padding-left: 50px;
+    background-color: rgba(131,197,190,1);
     
 }
 
@@ -40,9 +43,9 @@
     padding: 20px;
     column-gap: 5px;
     row-gap: 5px;
-    background-color: lightyellow;
-    width: 150px;
-    height: 150px;
+    background-color: white;
+    width: 350px;
+    height: 250px;
     border-radius: 10px;
     text-align: center;
     margin-left: 5px;
@@ -51,6 +54,16 @@
 
 #pantry-description {
     text-align: center;
+    color: black;
+    font-size: 3vmin;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+
 }
 
 
