@@ -155,12 +155,11 @@ body {
     font-family: 'Poppins', sans-serif;    
 }
 
-profile-image {
+.profile-image {
     width: 50%;
     height: 50%;
     padding-top: 20px;
     margin-left: 120px;
-    align-self: center;
 }
 
 .hi {
