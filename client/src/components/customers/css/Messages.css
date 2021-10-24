@@ -5,9 +5,66 @@
     padding-top: 70px;
     display: flex;
     flex-direction: column;
+
 }
 
 .message-header {
     margin-left: 100px;
     letter-spacing: 2px;
+    font-size: 5vmin;
+}
+
+#search-bar {
+    height: 34px;
+    font-size: 17px;
+    border-radius: 17px;
+
+    border: 1px solid #C2C2C2;
+    width: 90%;
+    max-width:400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:30px;
+    margin-left: 95px;
+}
+#search-bar:hover,
+#search-bar:focus{
+    box-shadow: 0px 0px 5px #C2C2C2;
+}
+
+.list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    row-gap: 10px;
+   
+}
+
+.chatEntry {
+    background-color: white;
+    width: 1000px;
+    height: 100px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.name {
+    margin-left:25px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vmin;
+}
+
+.profile-placeholder {
+    margin-top: 20px;
+    width: 45px;
+    height: 45px;
+    background: #D7987D;
+    margin-left: 50px;
+    border-radius: 35px;
 }
